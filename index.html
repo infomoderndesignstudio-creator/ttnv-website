@@ -24,7 +24,6 @@
     --shadow: 0 24px 60px -28px rgba(31, 42, 26, 0.45);
     --shadow-soft: 0 12px 32px -16px rgba(31, 42, 26, 0.25);
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
@@ -34,7 +33,6 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
   h1, h2, h3, h4, h5 {
     font-family: 'Fraunces', serif;
     font-weight: 500;
@@ -42,13 +40,10 @@
     letter-spacing: -0.02em;
     color: var(--moss-deep);
   }
-
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-
   .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
-
-  /* ========= NAVIGATIE ========= */
+  /* NAV */
   .nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     padding: 20px 0;
@@ -88,7 +83,6 @@
     transition: width .3s ease;
   }
   .nav-links a:not(.btn):hover::after { width: 100%; }
-
   .btn {
     display: inline-flex; align-items: center; gap: 10px;
     padding: 13px 24px;
@@ -111,14 +105,12 @@
   .btn--outline:hover { background: var(--moss); color: var(--cream) !important; }
   .btn--terra { background: var(--terra); }
   .btn--terra:hover { background: #a05f24; }
-
   .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
   .nav-toggle span {
     display: block; width: 26px; height: 2px;
     background: var(--moss-deep); margin: 5px 0; transition: .3s;
   }
-
-  /* ========= HERO ========= */
+  /* HERO */
   .hero {
     position: relative; min-height: 100vh;
     padding: 140px 0 80px; overflow: hidden;
@@ -172,6 +164,7 @@
     background-size: cover; background-position: center;
     margin-left: -12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: var(--leaf);
   }
   .trust-avatars div:first-child { margin-left: 0; }
   .trust-text { font-size: 14px; }
@@ -181,11 +174,11 @@
   }
   .trust-text span { color: var(--stone); }
   .stars { color: var(--terra); letter-spacing: 2px; font-size: 14px; }
-
   .hero-visual {
     position: relative; aspect-ratio: 4/5;
     border-radius: 24px; overflow: hidden;
     box-shadow: var(--shadow);
+    background: var(--leaf);
   }
   .hero-visual::after {
     content: ''; position: absolute; inset: 0;
@@ -197,7 +190,6 @@
     transition: transform .8s ease;
   }
   .hero-visual:hover img { transform: scale(1.04); }
-
   .hero-badge {
     position: absolute; bottom: 28px; left: 28px; z-index: 2;
     background: rgba(251, 248, 241, 0.95);
@@ -217,7 +209,6 @@
     font-size: 15px; color: var(--moss-deep); font-weight: 600;
   }
   .hero-badge-text span { color: var(--stone); }
-
   .hero-floating {
     position: absolute; top: 40px; right: -20px;
     background: var(--white); padding: 14px 18px;
@@ -235,8 +226,7 @@
     background: var(--leaf); border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(155,184,122,0.3);
   }
-
-  /* ========= STRIP ========= */
+  /* STRIP */
   .strip {
     background: var(--moss-deep); color: var(--cream);
     padding: 24px 0; overflow: hidden;
@@ -258,8 +248,7 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
-
-  /* ========= OVER ========= */
+  /* OVER */
   .about { padding: 120px 0; background: var(--white); }
   .about-grid {
     display: grid; grid-template-columns: 1fr 1.1fr;
@@ -269,6 +258,7 @@
   .about-visual-main {
     aspect-ratio: 3/4; border-radius: 20px;
     overflow: hidden; box-shadow: var(--shadow);
+    background: var(--leaf);
   }
   .about-visual-main img { width: 100%; height: 100%; object-fit: cover; }
   .about-visual-accent {
@@ -277,9 +267,9 @@
     border-radius: 20px; overflow: hidden;
     border: 8px solid var(--white);
     box-shadow: var(--shadow);
+    background: var(--terra);
   }
   .about-visual-accent img { width: 100%; height: 100%; object-fit: cover; }
-
   .section-label {
     display: inline-block; font-size: 12px; font-weight: 500;
     letter-spacing: 0.16em; text-transform: uppercase;
@@ -295,7 +285,6 @@
     margin-bottom: 24px; font-weight: 400;
   }
   .section-title em { font-style: italic; color: var(--forest); font-weight: 300; }
-
   .about p { color: var(--moss); font-size: 16.5px; margin-bottom: 16px; }
   .about-stats {
     display: grid; grid-template-columns: repeat(3, 1fr);
@@ -308,8 +297,7 @@
   }
   .stat-num span { color: var(--terra); }
   .stat-label { font-size: 13.5px; color: var(--stone); line-height: 1.4; }
-
-  /* ========= DIENSTEN ========= */
+  /* DIENSTEN */
   .services { padding: 120px 0; background: var(--cream); position: relative; }
   .services-header {
     display: grid; grid-template-columns: 1fr 1fr;
@@ -327,7 +315,10 @@
     transform: translateY(-6px);
     box-shadow: var(--shadow);
   }
-  .service-card-img { aspect-ratio: 16/10; overflow: hidden; position: relative; }
+  .service-card-img {
+    aspect-ratio: 16/10; overflow: hidden; position: relative;
+    background: var(--leaf);
+  }
   .service-card-img img {
     width: 100%; height: 100%; object-fit: cover;
     transition: transform .6s ease;
@@ -340,6 +331,7 @@
     width: 36px; height: 36px; border-radius: 50%;
     display: grid; place-items: center;
     font-family: 'Fraunces', serif; font-weight: 500; font-size: 15px;
+    z-index: 2;
   }
   .service-card-body { padding: 28px 28px 32px; }
   .service-card h3 { font-size: 24px; margin-bottom: 10px; font-weight: 500; }
@@ -354,8 +346,7 @@
   }
   .service-link:hover { gap: 14px; }
   .service-link svg { width: 14px; height: 14px; }
-
-  /* ========= ECO VALUES ========= */
+  /* ECO */
   .eco {
     padding: 120px 0; background: var(--moss-deep); color: var(--cream);
     position: relative; overflow: hidden;
@@ -404,8 +395,7 @@
     color: rgba(244, 239, 228, 0.65);
     font-size: 14.5px; line-height: 1.55;
   }
-
-  /* ========= PROJECTEN ========= */
+  /* PROJECTEN */
   .projects { padding: 120px 0; background: var(--white); }
   .projects-grid {
     display: grid; grid-template-columns: repeat(12, 1fr);
@@ -414,6 +404,7 @@
   .project {
     border-radius: 16px; overflow: hidden;
     position: relative; cursor: pointer;
+    background: var(--leaf);
   }
   .project img {
     width: 100%; height: 100%; object-fit: cover;
@@ -440,7 +431,6 @@
   .project-caption span {
     font-size: 12.5px; color: rgba(244, 239, 228, 0.8);
   }
-
   .project--1 { grid-column: span 6; grid-row: span 2; }
   .project--2 { grid-column: span 3; grid-row: span 1; }
   .project--3 { grid-column: span 3; grid-row: span 1; }
@@ -449,8 +439,7 @@
   .project--6 { grid-column: span 4; grid-row: span 1; }
   .project--7 { grid-column: span 4; grid-row: span 1; }
   .project--8 { grid-column: span 4; grid-row: span 1; }
-
-  /* ========= REVIEWS ========= */
+  /* REVIEWS */
   .reviews { padding: 120px 0; background: var(--cream); }
   .reviews-header { text-align: center; margin-bottom: 60px; }
   .reviews-rating {
@@ -497,8 +486,7 @@
     color: var(--moss-deep); font-size: 16px;
   }
   .review-source { font-size: 12.5px; color: var(--stone); }
-
-  /* ========= FAQ ========= */
+  /* FAQ */
   .faq { padding: 120px 0; background: var(--white); }
   .faq-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; }
   .faq-list { display: flex; flex-direction: column; gap: 12px; }
@@ -530,8 +518,7 @@
     color: var(--moss); font-size: 15px; line-height: 1.6;
   }
   .faq-item.open .faq-a { max-height: 220px; padding: 0 28px 24px; }
-
-  /* ========= CTA ========= */
+  /* CTA */
   .cta {
     padding: 100px 0; background: var(--moss);
     color: var(--cream); position: relative; overflow: hidden;
@@ -571,8 +558,7 @@
   .cta .btn--outline:hover {
     background: var(--cream); color: var(--moss-deep) !important;
   }
-
-  /* ========= FOOTER ========= */
+  /* FOOTER */
   footer {
     background: var(--moss-deep); color: var(--cream-warm);
     padding: 80px 0 32px;
@@ -596,7 +582,6 @@
   }
   .footer-social a:hover { background: var(--leaf); }
   .footer-social svg { width: 16px; height: 16px; }
-
   footer h5 {
     color: var(--cream); font-size: 15px; font-weight: 600;
     margin-bottom: 18px; font-family: 'Inter', sans-serif;
@@ -610,7 +595,6 @@
     font-size: 14.5px; transition: color .25s;
   }
   .footer-links a:hover { color: var(--leaf-bright); }
-
   .footer-contact-item {
     display: flex; align-items: flex-start; gap: 12px;
     margin-bottom: 14px; font-size: 14.5px;
@@ -621,7 +605,6 @@
     color: var(--leaf-bright);
     flex-shrink: 0; margin-top: 3px;
   }
-
   .footer-bottom {
     padding-top: 28px;
     border-top: 1px solid rgba(244, 239, 228, 0.1);
@@ -629,15 +612,13 @@
     flex-wrap: wrap; gap: 16px;
     font-size: 13px; color: rgba(244, 239, 228, 0.5);
   }
-
-  /* ========= REVEAL ========= */
+  /* REVEAL */
   .reveal {
     opacity: 0; transform: translateY(30px);
     transition: opacity .8s ease, transform .8s ease;
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
-
-  /* ========= RESPONSIVE ========= */
+  /* RESPONSIVE */
   @media (max-width: 960px) {
     .nav-links { display: none; }
     .nav-toggle { display: block; }
@@ -681,7 +662,6 @@
 </style>
 </head>
 <body>
-
 <!-- NAV -->
 <nav class="nav">
   <div class="container nav-inner">
@@ -706,7 +686,6 @@
     </button>
   </div>
 </nav>
-
 <!-- HERO -->
 <header class="hero">
   <div class="container hero-grid">
@@ -727,10 +706,10 @@
       </div>
       <div class="hero-trust">
         <div class="trust-avatars">
-          <div style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80')"></div>
-          <div style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80')"></div>
-          <div style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80')"></div>
-          <div style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80')"></div>
+          <div style="background-image: url('https://source.unsplash.com/random/200x200/?portrait,woman,1')"></div>
+          <div style="background-image: url('https://source.unsplash.com/random/200x200/?portrait,man,2')"></div>
+          <div style="background-image: url('https://source.unsplash.com/random/200x200/?portrait,smile,3')"></div>
+          <div style="background-image: url('https://source.unsplash.com/random/200x200/?portrait,4')"></div>
         </div>
         <div class="trust-text">
           <div class="stars">★★★★★</div>
@@ -740,7 +719,7 @@
       </div>
     </div>
     <div class="hero-visual reveal">
-      <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&q=80" alt="Ecologische tuin met bloemenweide" />
+      <img src="https://source.unsplash.com/random/1200x1500/?wildflower,meadow,garden" alt="Ecologische tuin met bloemenweide" />
       <div class="hero-floating">
         <div class="hero-floating-dot"></div>
         <div>
@@ -760,7 +739,6 @@
     </div>
   </div>
 </header>
-
 <!-- STRIP -->
 <section class="strip">
   <div class="strip-track">
@@ -778,16 +756,15 @@
     <span class="strip-item">Duurzame materialen</span>
   </div>
 </section>
-
 <!-- OVER -->
 <section class="about" id="over">
   <div class="container about-grid">
     <div class="about-visual reveal">
       <div class="about-visual-main">
-        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1000&q=80" alt="Werken in een ecologische tuin" />
+        <img src="https://source.unsplash.com/random/1000x1333/?gardener,working,garden" alt="Werken in een ecologische tuin" />
       </div>
       <div class="about-visual-accent">
-        <img src="https://images.unsplash.com/photo-1444858345857-d70403a59ed5?w=600&q=80" alt="Bij op bloem" />
+        <img src="https://source.unsplash.com/random/600x600/?bee,flower" alt="Bij op bloem" />
       </div>
     </div>
     <div class="about-content reveal">
@@ -820,7 +797,6 @@
     </div>
   </div>
 </section>
-
 <!-- DIENSTEN -->
 <section class="services" id="diensten">
   <div class="container">
@@ -837,7 +813,7 @@
     <div class="services-grid">
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=900&q=80" alt="Ecologisch tuinontwerp" />
+          <img src="https://source.unsplash.com/random/900x562/?garden,design,landscape" alt="Ecologisch tuinontwerp" />
           <div class="service-card-num">01</div>
         </div>
         <div class="service-card-body">
@@ -852,10 +828,9 @@
           </a>
         </div>
       </div>
-
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=900&q=80" alt="Inheemse beplanting" />
+          <img src="https://source.unsplash.com/random/900x562/?wildflowers,plants" alt="Inheemse beplanting" />
           <div class="service-card-num">02</div>
         </div>
         <div class="service-card-body">
@@ -870,10 +845,9 @@
           </a>
         </div>
       </div>
-
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80" alt="Natuurlijk tuinonderhoud" />
+          <img src="https://source.unsplash.com/random/900x562/?gardening,pruning,tools" alt="Natuurlijk tuinonderhoud" />
           <div class="service-card-num">03</div>
         </div>
         <div class="service-card-body">
@@ -888,10 +862,9 @@
           </a>
         </div>
       </div>
-
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://images.unsplash.com/photo-1496673144788-d1a3f8c01ae9?w=900&q=80" alt="Habitatcreatie en waterpartij" />
+          <img src="https://source.unsplash.com/random/900x562/?pond,water,garden" alt="Habitatcreatie en waterpartij" />
           <div class="service-card-num">04</div>
         </div>
         <div class="service-card-body">
@@ -909,7 +882,6 @@
     </div>
   </div>
 </section>
-
 <!-- ECO -->
 <section class="eco" id="ecologie">
   <div class="container eco-grid">
@@ -959,7 +931,6 @@
     </div>
   </div>
 </section>
-
 <!-- PROJECTEN -->
 <section class="projects" id="projecten">
   <div class="container">
@@ -972,41 +943,40 @@
     </div>
     <div class="projects-grid">
       <div class="project project--1 reveal">
-        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1200&q=80" alt="Wilde bloementuin" />
+        <img src="https://source.unsplash.com/random/1200x800/?wildflower,garden,meadow" alt="Wilde bloementuin" />
         <div class="project-caption"><strong>Wilde bloementuin</strong><span>Nieuw-Vennep · 2024</span></div>
       </div>
       <div class="project project--2 reveal">
-        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80" alt="Natuurlijke vijver" />
+        <img src="https://source.unsplash.com/random/800x600/?pond,natural,water" alt="Natuurlijke vijver" />
         <div class="project-caption"><strong>Natuurlijke vijver</strong><span>Hoofddorp</span></div>
       </div>
       <div class="project project--3 reveal">
-        <img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80" alt="Eetbare tuin" />
+        <img src="https://source.unsplash.com/random/800x600/?vegetable,garden,edible" alt="Eetbare tuin" />
         <div class="project-caption"><strong>Eetbare tuin</strong><span>Haarlemmermeer</span></div>
       </div>
       <div class="project project--4 reveal">
-        <img src="https://images.unsplash.com/photo-1444858345857-d70403a59ed5?w=800&q=80" alt="Bij-vriendelijke tuin" />
+        <img src="https://source.unsplash.com/random/800x600/?bee,flowers,garden" alt="Bij-vriendelijke tuin" />
         <div class="project-caption"><strong>Bij-vriendelijke tuin</strong><span>Lisse</span></div>
       </div>
       <div class="project project--5 reveal">
-        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80" alt="Groene veranda" />
+        <img src="https://source.unsplash.com/random/800x600/?pergola,green,plants" alt="Groene veranda" />
         <div class="project-caption"><strong>Groene veranda</strong><span>Hillegom</span></div>
       </div>
       <div class="project project--6 reveal">
-        <img src="https://images.unsplash.com/photo-1496673144788-d1a3f8c01ae9?w=800&q=80" alt="Takkenril en habitat" />
+        <img src="https://source.unsplash.com/random/800x600/?branches,natural,fence" alt="Takkenril en habitat" />
         <div class="project-caption"><strong>Takkenril & habitat</strong><span>Voorhout</span></div>
       </div>
       <div class="project project--7 reveal">
-        <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?w=800&q=80" alt="Inheemse border" />
+        <img src="https://source.unsplash.com/random/800x600/?perennial,border,flowers" alt="Inheemse border" />
         <div class="project-caption"><strong>Inheemse border</strong><span>Sassenheim</span></div>
       </div>
       <div class="project project--8 reveal">
-        <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80" alt="Biodiverse stadstuin" />
+        <img src="https://source.unsplash.com/random/800x600/?urban,garden,plants" alt="Biodiverse stadstuin" />
         <div class="project-caption"><strong>Biodiverse stadstuin</strong><span>Nieuw-Vennep</span></div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- REVIEWS -->
 <section class="reviews">
   <div class="container">
@@ -1065,7 +1035,6 @@
     </div>
   </div>
 </section>
-
 <!-- FAQ -->
 <section class="faq">
   <div class="container faq-grid">
@@ -1118,7 +1087,6 @@
     </div>
   </div>
 </section>
-
 <!-- CTA -->
 <section class="cta" id="contact">
   <div class="container">
@@ -1139,7 +1107,6 @@
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="container">
@@ -1211,7 +1178,6 @@
     </div>
   </div>
 </footer>
-
 <script>
   // Mobiel menu
   const toggle = document.getElementById('navToggle');
@@ -1220,7 +1186,6 @@
   navLinks?.querySelectorAll('a').forEach(a =>
     a.addEventListener('click', () => navLinks.classList.remove('mobile-open'))
   );
-
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -1230,7 +1195,6 @@
       if (!wasOpen) item.classList.add('open');
     });
   });
-
   // Reveal on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -1241,7 +1205,6 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
   // Nav shrink on scroll
   const nav = document.querySelector('.nav');
   window.addEventListener('scroll', () => {
@@ -1249,6 +1212,5 @@
     else nav.style.padding = '20px 0';
   });
 </script>
-
 </body>
 </html>
