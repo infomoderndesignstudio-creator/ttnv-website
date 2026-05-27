@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>TTNV – Theo Tuinen Nieuw Vennep | Ecologisch tuinontwerp & aanleg</title>
-<meta name="description" content="TTNV is uw ecologische hovenier in Nieuw-Vennep. Tuinontwerp, aanleg en onderhoud in harmonie met de natuur." />
+<meta name="description" content="TTNV is uw ecologische hovenier in Nieuw-Vennep. Tuinontwerp, aanleg en onderhoud in harmonie met de natuur. Biodiversiteit en duurzaam vakmanschap." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
 
   .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
 
-  /* NAV */
+  /* ========= NAVIGATIE ========= */
   .nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     padding: 20px 0;
@@ -118,7 +118,7 @@
     background: var(--moss-deep); margin: 5px 0; transition: .3s;
   }
 
-  /* HERO */
+  /* ========= HERO ========= */
   .hero {
     position: relative; min-height: 100vh;
     padding: 140px 0 80px; overflow: hidden;
@@ -172,7 +172,6 @@
     background-size: cover; background-position: center;
     margin-left: -12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: var(--leaf);
   }
   .trust-avatars div:first-child { margin-left: 0; }
   .trust-text { font-size: 14px; }
@@ -187,7 +186,6 @@
     position: relative; aspect-ratio: 4/5;
     border-radius: 24px; overflow: hidden;
     box-shadow: var(--shadow);
-    background: var(--leaf);
   }
   .hero-visual::after {
     content: ''; position: absolute; inset: 0;
@@ -238,7 +236,7 @@
     box-shadow: 0 0 0 4px rgba(155,184,122,0.3);
   }
 
-  /* STRIP */
+  /* ========= STRIP ========= */
   .strip {
     background: var(--moss-deep); color: var(--cream);
     padding: 24px 0; overflow: hidden;
@@ -261,7 +259,7 @@
     100% { transform: translateX(-50%); }
   }
 
-  /* OVER */
+  /* ========= OVER ========= */
   .about { padding: 120px 0; background: var(--white); }
   .about-grid {
     display: grid; grid-template-columns: 1fr 1.1fr;
@@ -271,7 +269,6 @@
   .about-visual-main {
     aspect-ratio: 3/4; border-radius: 20px;
     overflow: hidden; box-shadow: var(--shadow);
-    background: var(--leaf);
   }
   .about-visual-main img { width: 100%; height: 100%; object-fit: cover; }
   .about-visual-accent {
@@ -280,7 +277,6 @@
     border-radius: 20px; overflow: hidden;
     border: 8px solid var(--white);
     box-shadow: var(--shadow);
-    background: var(--terra);
   }
   .about-visual-accent img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -313,7 +309,7 @@
   .stat-num span { color: var(--terra); }
   .stat-label { font-size: 13.5px; color: var(--stone); line-height: 1.4; }
 
-  /* DIENSTEN */
+  /* ========= DIENSTEN ========= */
   .services { padding: 120px 0; background: var(--cream); position: relative; }
   .services-header {
     display: grid; grid-template-columns: 1fr 1fr;
@@ -331,10 +327,7 @@
     transform: translateY(-6px);
     box-shadow: var(--shadow);
   }
-  .service-card-img {
-    aspect-ratio: 16/10; overflow: hidden; position: relative;
-    background: var(--leaf);
-  }
+  .service-card-img { aspect-ratio: 16/10; overflow: hidden; position: relative; }
   .service-card-img img {
     width: 100%; height: 100%; object-fit: cover;
     transition: transform .6s ease;
@@ -347,7 +340,6 @@
     width: 36px; height: 36px; border-radius: 50%;
     display: grid; place-items: center;
     font-family: 'Fraunces', serif; font-weight: 500; font-size: 15px;
-    z-index: 2;
   }
   .service-card-body { padding: 28px 28px 32px; }
   .service-card h3 { font-size: 24px; margin-bottom: 10px; font-weight: 500; }
@@ -363,7 +355,7 @@
   .service-link:hover { gap: 14px; }
   .service-link svg { width: 14px; height: 14px; }
 
-  /* ECO */
+  /* ========= ECO VALUES ========= */
   .eco {
     padding: 120px 0; background: var(--moss-deep); color: var(--cream);
     position: relative; overflow: hidden;
@@ -413,7 +405,7 @@
     font-size: 14.5px; line-height: 1.55;
   }
 
-  /* PROJECTEN */
+  /* ========= PROJECTEN ========= */
   .projects { padding: 120px 0; background: var(--white); }
   .projects-grid {
     display: grid; grid-template-columns: repeat(12, 1fr);
@@ -422,7 +414,6 @@
   .project {
     border-radius: 16px; overflow: hidden;
     position: relative; cursor: pointer;
-    background: var(--leaf);
   }
   .project img {
     width: 100%; height: 100%; object-fit: cover;
@@ -459,7 +450,7 @@
   .project--7 { grid-column: span 4; grid-row: span 1; }
   .project--8 { grid-column: span 4; grid-row: span 1; }
 
-  /* REVIEWS */
+  /* ========= REVIEWS ========= */
   .reviews { padding: 120px 0; background: var(--cream); }
   .reviews-header { text-align: center; margin-bottom: 60px; }
   .reviews-rating {
@@ -507,7 +498,7 @@
   }
   .review-source { font-size: 12.5px; color: var(--stone); }
 
-  /* FAQ */
+  /* ========= FAQ ========= */
   .faq { padding: 120px 0; background: var(--white); }
   .faq-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; }
   .faq-list { display: flex; flex-direction: column; gap: 12px; }
@@ -540,7 +531,7 @@
   }
   .faq-item.open .faq-a { max-height: 220px; padding: 0 28px 24px; }
 
-  /* CTA */
+  /* ========= CTA ========= */
   .cta {
     padding: 100px 0; background: var(--moss);
     color: var(--cream); position: relative; overflow: hidden;
@@ -581,7 +572,7 @@
     background: var(--cream); color: var(--moss-deep) !important;
   }
 
-  /* FOOTER */
+  /* ========= FOOTER ========= */
   footer {
     background: var(--moss-deep); color: var(--cream-warm);
     padding: 80px 0 32px;
@@ -639,14 +630,14 @@
     font-size: 13px; color: rgba(244, 239, 228, 0.5);
   }
 
-  /* REVEAL */
+  /* ========= REVEAL ========= */
   .reveal {
     opacity: 0; transform: translateY(30px);
     transition: opacity .8s ease, transform .8s ease;
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* RESPONSIVE */
+  /* ========= RESPONSIVE ========= */
   @media (max-width: 960px) {
     .nav-links { display: none; }
     .nav-toggle { display: block; }
@@ -736,10 +727,10 @@
       </div>
       <div class="hero-trust">
         <div class="trust-avatars">
-          <div style="background-image: url('https://picsum.photos/seed/avatar1/200/200')"></div>
-          <div style="background-image: url('https://picsum.photos/seed/avatar2/200/200')"></div>
-          <div style="background-image: url('https://picsum.photos/seed/avatar3/200/200')"></div>
-          <div style="background-image: url('https://picsum.photos/seed/avatar4/200/200')"></div>
+          <div style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80')"></div>
+          <div style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80')"></div>
+          <div style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80')"></div>
+          <div style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80')"></div>
         </div>
         <div class="trust-text">
           <div class="stars">★★★★★</div>
@@ -749,7 +740,7 @@
       </div>
     </div>
     <div class="hero-visual reveal">
-      <img src="https://picsum.photos/seed/garden-hero/1200/1500" alt="Ecologische tuin met bloemenweide" onerror="this.style.display='none'" />
+      <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&q=80" alt="Ecologische tuin met bloemenweide" />
       <div class="hero-floating">
         <div class="hero-floating-dot"></div>
         <div>
@@ -793,10 +784,10 @@
   <div class="container about-grid">
     <div class="about-visual reveal">
       <div class="about-visual-main">
-        <img src="https://picsum.photos/seed/theo-werken/1000/1333" alt="Werken in een ecologische tuin" />
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1000&q=80" alt="Werken in een ecologische tuin" />
       </div>
       <div class="about-visual-accent">
-        <img src="https://picsum.photos/seed/bij-bloem/600/600" alt="Bij op bloem" />
+        <img src="https://images.unsplash.com/photo-1444858345857-d70403a59ed5?w=600&q=80" alt="Bij op bloem" />
       </div>
     </div>
     <div class="about-content reveal">
@@ -846,7 +837,7 @@
     <div class="services-grid">
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://picsum.photos/seed/tuinontwerp/900/562" alt="Ecologisch tuinontwerp" />
+          <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=900&q=80" alt="Ecologisch tuinontwerp" />
           <div class="service-card-num">01</div>
         </div>
         <div class="service-card-body">
@@ -864,7 +855,7 @@
 
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://picsum.photos/seed/beplanting/900/562" alt="Inheemse beplanting" />
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=900&q=80" alt="Inheemse beplanting" />
           <div class="service-card-num">02</div>
         </div>
         <div class="service-card-body">
@@ -882,7 +873,7 @@
 
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://picsum.photos/seed/onderhoud/900/562" alt="Natuurlijk tuinonderhoud" />
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80" alt="Natuurlijk tuinonderhoud" />
           <div class="service-card-num">03</div>
         </div>
         <div class="service-card-body">
@@ -900,7 +891,7 @@
 
       <div class="service-card reveal">
         <div class="service-card-img">
-          <img src="https://picsum.photos/seed/water-vijver/900/562" alt="Habitatcreatie en waterpartij" />
+          <img src="https://images.unsplash.com/photo-1496673144788-d1a3f8c01ae9?w=900&q=80" alt="Habitatcreatie en waterpartij" />
           <div class="service-card-num">04</div>
         </div>
         <div class="service-card-body">
@@ -981,35 +972,35 @@
     </div>
     <div class="projects-grid">
       <div class="project project--1 reveal">
-        <img src="https://picsum.photos/seed/project-1/1200/800" alt="Wilde bloementuin" />
+        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1200&q=80" alt="Wilde bloementuin" />
         <div class="project-caption"><strong>Wilde bloementuin</strong><span>Nieuw-Vennep · 2024</span></div>
       </div>
       <div class="project project--2 reveal">
-        <img src="https://picsum.photos/seed/project-2/800/600" alt="Natuurlijke vijver" />
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80" alt="Natuurlijke vijver" />
         <div class="project-caption"><strong>Natuurlijke vijver</strong><span>Hoofddorp</span></div>
       </div>
       <div class="project project--3 reveal">
-        <img src="https://picsum.photos/seed/project-3/800/600" alt="Eetbare tuin" />
+        <img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80" alt="Eetbare tuin" />
         <div class="project-caption"><strong>Eetbare tuin</strong><span>Haarlemmermeer</span></div>
       </div>
       <div class="project project--4 reveal">
-        <img src="https://picsum.photos/seed/project-4/800/600" alt="Bij-vriendelijke tuin" />
+        <img src="https://images.unsplash.com/photo-1444858345857-d70403a59ed5?w=800&q=80" alt="Bij-vriendelijke tuin" />
         <div class="project-caption"><strong>Bij-vriendelijke tuin</strong><span>Lisse</span></div>
       </div>
       <div class="project project--5 reveal">
-        <img src="https://picsum.photos/seed/project-5/800/600" alt="Groene veranda" />
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80" alt="Groene veranda" />
         <div class="project-caption"><strong>Groene veranda</strong><span>Hillegom</span></div>
       </div>
       <div class="project project--6 reveal">
-        <img src="https://picsum.photos/seed/project-6/800/600" alt="Takkenril en habitat" />
+        <img src="https://images.unsplash.com/photo-1496673144788-d1a3f8c01ae9?w=800&q=80" alt="Takkenril en habitat" />
         <div class="project-caption"><strong>Takkenril & habitat</strong><span>Voorhout</span></div>
       </div>
       <div class="project project--7 reveal">
-        <img src="https://picsum.photos/seed/project-7/800/600" alt="Inheemse border" />
+        <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?w=800&q=80" alt="Inheemse border" />
         <div class="project-caption"><strong>Inheemse border</strong><span>Sassenheim</span></div>
       </div>
       <div class="project project--8 reveal">
-        <img src="https://picsum.photos/seed/project-8/800/600" alt="Biodiverse stadstuin" />
+        <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80" alt="Biodiverse stadstuin" />
         <div class="project-caption"><strong>Biodiverse stadstuin</strong><span>Nieuw-Vennep</span></div>
       </div>
     </div>
